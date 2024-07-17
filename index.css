@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 90%;
+  margin: 0px auto;
+  background-color: rgb(34, 34, 34, 100%);
+  color: rgb(255, 255, 255, 100%);
+  font-family: "Roboto", sans-serif;
+}
+/* shared style */
+.display-flex {
+  display: flex;
+}
+.shared-btn-style {
+  border: none;
+  background-color: #e6533c;
+  border-radius: 20px;
+}
+/* navber */
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+}
+nav > h1 {
+  color: #e6533c;
+  font-weight: 900;
+  font-style: italic;
+}
+nav > ul {
+  border: 1px solid rgba(128, 128, 128, 0.534);
+  border-radius: 24px;
+  padding: 3px 4px;
+}
+nav > ul > li {
+  list-style: none;
+  padding: 10px 20px;
+}
+/* header */
+.get-body-section {
+  align-items: center;
+  justify-content: space-between;
+}
+/* first div */
+.get-body-section-first-div {
+  text-align: left;
+  width: 50%;
+}
+.get-body-section-first-div > h1 {
+  font-size: 4vw;
+  font-weight: 900;
+}
+.get-body-section-first-div > p {
+  color: #a4a4a4ca;
+  font-size: 1vw;
+  font-weight: 200;
+  margin: 20px 0px;
+}
+.get-body-section-first-div > button {
+  color: #ffffff;
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 10px 24px;
+  border-radius: 25px;
+  margin: 30px 0px 0px 10px;
+}
+/* download btn */
+.dowenload-btn {
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+/* second div */
+.get-body-section-second-div {
+  /* position: absolute; */
+  border: 2px solid #ffffff;
+  margin-right: 40px;
+}
+.get-body-section-second-div > img {
+  /* border: 2px solid #ffffff; */
+  width: 20vw;
+}
+
+.workout-500 {
+  position: relative;
+  top: -480px;
+  left: 180px;
+  border: 2px solid red;
+}
+.workout-500 > h1 {
+  /* font-size: 2vw; */
+  font-weight: 900;
+}
