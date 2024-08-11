@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Whisper&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0px;
@@ -24,11 +25,14 @@ body {
 /* section title */
 .section-title {
   text-align: center;
+  margin: 120px 0px;
 }
 .section-title > h1 {
   font-size: 4em;
 }
 .section-title > p {
+  font-size: 20px;
+  color: #8a8a8ac5;
   margin: 20px 0px;
 }
 
@@ -48,7 +52,7 @@ nav > h1 {
   font-style: italic;
 }
 nav > ul {
-  border: 1px solid rgba(128, 128, 128, 0.534);
+  border: 1px solid rgba(128, 128, 128, 0.329);
   border-radius: 24px;
   padding: 3px 4px;
 }
@@ -56,7 +60,13 @@ nav > ul > li {
   list-style: none;
   padding: 10px 20px;
 }
+.small-d-menu {
+  display: none;
+}
 /* header */
+.shape {
+  font-family: "Whisper", cursive;
+}
 .get-body-section {
   max-width: 1440px;
   margin: 0px auto;
@@ -69,7 +79,7 @@ nav > ul > li {
   width: 50%;
 }
 .get-body-section-first-div > h1 {
-  font-size: 3vw;
+  font-size: 7em;
   /* font-size: 78px; */
   font-weight: 900;
 }
@@ -114,7 +124,11 @@ nav > ul > li {
   width: fit-content;
   padding: 15px 20px;
   border-radius: 8px;
-  background-color: rgba(214, 214, 214, 0.132);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.5px solid rgba(116, 116, 116, 0.599);
+}
+.workout-500 > p {
+  color: rgba(214, 214, 214, 0.565);
 }
 .tutorial-350 {
   display: flex;
@@ -126,6 +140,11 @@ nav > ul > li {
   padding: 15px 20px;
   border-radius: 8px;
   background-color: rgba(214, 214, 214, 0.132);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 0.5px solid rgba(116, 116, 116, 0.599);
+}
+.tutorial-350 > div > p {
+  color: rgba(214, 214, 214, 0.565);
 }
 /* change your habits section */
 .habits-items {
@@ -143,6 +162,7 @@ nav > ul > li {
   margin: 10px 0px;
 }
 .habits-item > p {
+  color: #7171719c;
   font-size: 1em;
   padding: 0px 40px;
 }
@@ -303,10 +323,8 @@ footer {
   margin: 0px auto;
   display: flex;
   justify-content: space-evenly;
-  /* align-items: center; */
-  /* padding: 50px 80px; */
-  /* gap: 50px; */
-  /* margin: 60px 40px; */
+  border-bottom: 2px solid rgb(100, 100, 100);
+  padding-bottom: 70px;
 }
 footer > div > h1 {
   font-size: 2.5em;
@@ -327,7 +345,7 @@ footer > div > h2 {
   /* padding: 20px 0px; */
 }
 footer > div > ul > li {
-  font-size: 1.2em;
+  font-size: 1em;
   list-style: none;
   color: #a4a4a4ca;
   margin-top: 12px;
@@ -363,10 +381,15 @@ footer > div > ul > li {
     font-size: 5vw;
   }
   .section-title > p {
+    font-size: 15px;
     margin: 20px 10px;
   }
   /* navber */
-
+  .small-d-menu {
+    color: rgb(255, 255, 255);
+    display: block;
+    width: 30px;
+  }
   nav {
     justify-content: space-between;
     align-items: center;
@@ -378,7 +401,8 @@ footer > div > ul > li {
     font-style: italic;
   }
   nav > ul {
-    border: 5px solid rgba(128, 128, 128, 0.534);
+    display: none;
+    border: 5px solid rgba(181, 181, 181, 0);
     border-radius: 24px;
     padding: 3px 4px;
   }
@@ -494,14 +518,93 @@ footer > div > ul > li {
   .run-an-extra-first-div > button {
     /* align-items: center;
     text-align: center; */
-    font-size: 1em;
-    padding: 8px 150px;
+    font-size: 1.5em;
+    padding: 20px 150px;
     margin: 20px auto;
   }
   .run-an-extra-img-2nd-div > img {
     border-radius: 20px;
     /* zoom: 500px; */
     width: 100%;
+  }
+  /* BMI Calculetor */
+  .bmi-calc-div {
+    background-color: rgba(116, 116, 116, 0.288);
+  }
+  .calc-section {
+    /* max-width: 1440px; */
+    /* margin: 0px 30px; */
+    /* padding: 50px 20px; */
+  }
+  .bmi-calculator-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+    /* margin: 88px 0px; */
+  }
+  .bmi-calculator-section > div > h1 {
+    margin: 50px 0px 30px 0px;
+    font-weight: 800;
+    font-size: 2em;
+  }
+  .bmi-calculator-section > div > p {
+    color: rgb(255, 255, 255, 50%);
+    margin: 20px auto;
+    width: 80%;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  .bmi-table > tr,
+  td,
+  th {
+    margin: 0px;
+    padding: 12px 25px;
+    text-align: left;
+    border: 1px solid #71717185;
+  }
+  /* calculator-your-bmi */
+  .calculator-your-bmi > input {
+    padding: 15px 30px;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255, 10%);
+  }
+  .item1 {
+    grid-area: header;
+  }
+  .item2 {
+    grid-area: menu;
+  }
+  .item3 {
+    grid-area: main;
+  }
+  .item4 {
+    grid-area: right;
+  }
+  .item5 {
+    grid-area: footer;
+  }
+  .calculator-your-bmi {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "header header  menu menu"
+      "main main  right right"
+      "footer footer footer footer";
+  }
+  .calc-btn {
+    text-align: center;
+    margin: 30px;
+  }
+  .calc-btn > button {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 15px 80px;
   }
   /*  Meet Our Team  */
   .meet-our-team-items {
@@ -545,5 +648,39 @@ footer > div > ul > li {
   }
   .meet-our-team-item-6 {
     background-image: url("images/trainer6.png");
+  }
+  footer {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    /* gap: 50px; */
+    /* margin: 60px 40px; */
+  }
+  footer > div > h1 {
+    font-size: 2.5em;
+    color: #e6533c;
+    font-weight: 900;
+    font-style: italic;
+    margin: 20px 0px;
+  }
+  footer > div > p {
+    color: #a4a4a4ca;
+    font-size: 1em;
+    width: 70%;
+    font-weight: 200;
+    margin-bottom: 30px;
+  }
+  footer > div > h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: 10px 0px;
+  }
+  footer > div > ul > li {
+    font-size: 1em;
+    list-style: none;
+    color: #a4a4a4ca;
+    margin-top: 8px;
   }
 }
